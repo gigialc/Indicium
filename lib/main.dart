@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:indicium/utils/create_schemas.dart';
+import 'package:comment_box/comment/comment.dart';
+import 'package:comment_box/comment/test.dart';
+import 'package:comment_box/main.dart';
+import 'package:flutter/material.dart';
+
 
 import 'home_page.dart';
 import 'onboarding_page.dart';
@@ -34,3 +39,4 @@ class MyApp extends StatelessWidget {
         });
   }
 }
+

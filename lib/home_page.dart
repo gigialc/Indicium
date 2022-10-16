@@ -1,6 +1,11 @@
 import 'package:avatar_view/avatar_view.dart';
 import 'package:flutter/material.dart';
 import 'package:motor_flutter/motor_flutter.dart';
+import 'package:comment_box/comment/comment.dart';
+import 'package:comment_box/comment/test.dart';
+import 'package:comment_box/main.dart';
+import 'package:flutter/material.dart';
+
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,8 +15,8 @@ class HomePage extends StatelessWidget {
     final myController = TextEditingController();
     return Scaffold(
       appBar: AppBar(
-        title: Text("Stake the Stigma"),
-      ),
+        centerTitle: true,
+        title: Text("STAKE THE STIGMA",),),
       body: Center(
         child: ListView(
           children: <Widget>[
@@ -27,7 +32,7 @@ class HomePage extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.network(
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg",
+                        "https://us.123rf.com/450wm/artinspiring/artinspiring1709/artinspiring170900485/86627158-menstrual-pain-illustration-.jpg?ver=6",
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -80,17 +85,24 @@ class HomePage extends StatelessWidget {
                                               //                   'assets/icons/otherIcons/successfullyRegistered.png',
                                               //                 ),
                                               Text(
-                                                'You Subcribed to Joe Dow',
+                                                'When I got my first period,I was very scared...',
                                                 style: TextStyle(fontSize: 20),
                                               ),
+                                            
                                               TextField(
                                                 controller: myController,
                                                 decoration: InputDecoration(
                                                   border: OutlineInputBorder(),
                                                   labelText:
-                                                      'Quantity of Collectibles',
+                                                      'Spread love',
                                                 ),
+                                              
+                                                maxLength: 300,
+                                                cursorWidth: 2.0,
+                                                cursorColor: Colors.red,
+                                                cursorRadius: Radius.circular(4),
                                               ),
+
                                               Container(
                                                 height: 54,
                                                 width: 300,
@@ -112,8 +124,9 @@ class HomePage extends StatelessWidget {
                                                     ),
                                                   ),
                                                   onPressed: () {},
+                                              
                                                   child: Text(
-                                                    "Subcribe",
+                                                    "Post",
                                                   ),
                                                 ),
                                               )
@@ -135,8 +148,8 @@ class HomePage extends StatelessWidget {
                                 avatarType: AvatarType.CIRCLE,
                                 backgroundColor: Colors.red,
                                 imagePath:
-                                    "https://media.timeout.com/images/105685472/750/562/image.jpg",
-                                placeHolder: Container(
+                                "https://us.123rf.com/450wm/artinspiring/artinspiring1709/artinspiring170900485/86627158-menstrual-pain-illustration-.jpg?ver=6"
+                                ,placeHolder: Container(
                                   child: Icon(
                                     Icons.person,
                                     size: 20,
@@ -154,13 +167,18 @@ class HomePage extends StatelessWidget {
                               width: 10,
                             ),
                             Text(
-                              "Paula",
+                              "Paula Burgos",
                               style: TextStyle(fontSize: 20),
                             ),
                           ],
                         ),
                       ),
                     ),
+
+
+
+
+
                     Positioned(
                       bottom: MediaQuery.of(context).orientation ==
                               Orientation.landscape
@@ -194,7 +212,7 @@ class HomePage extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.network(
-                        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/b8/dc/34/e6cba68c-39de-4799.jpg?w=700&h=600&s=1",
+                        "https://us.123rf.com/450wm/artinspiring/artinspiring1709/artinspiring170900485/86627158-menstrual-pain-illustration-.jpg?ver=6",
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -247,7 +265,7 @@ class HomePage extends StatelessWidget {
                                               //                   'assets/icons/otherIcons/successfullyRegistered.png',
                                               //                 ),
                                               Text(
-                                                'You Subcribed to Joe Dow',
+                                                'I have always been insecure about when talking about menstruation and it has...',
                                                 style: TextStyle(fontSize: 20),
                                               ),
                                               TextField(
@@ -255,7 +273,7 @@ class HomePage extends StatelessWidget {
                                                 decoration: InputDecoration(
                                                   border: OutlineInputBorder(),
                                                   labelText:
-                                                      'Quantity of Collectibles',
+                                                      'Spread love',
                                                 ),
                                               ),
                                               Container(
@@ -280,7 +298,7 @@ class HomePage extends StatelessWidget {
                                                   ),
                                                   onPressed: () {},
                                                   child: Text(
-                                                    "Subcribe",
+                                                    "Post",
                                                   ),
                                                 ),
                                               )
@@ -321,7 +339,7 @@ class HomePage extends StatelessWidget {
                               width: 10,
                             ),
                             Text(
-                              "Joe Dow",
+                              "Carolina ",
                               style: TextStyle(fontSize: 20),
                             ),
                           ],
@@ -414,7 +432,7 @@ class HomePage extends StatelessWidget {
                                               //                   'assets/icons/otherIcons/successfullyRegistered.png',
                                               //                 ),
                                               Text(
-                                                'You Subcribed to Joe Dow',
+                                                'When I got my first period,I was very scared...',
                                                 style: TextStyle(fontSize: 20),
                                               ),
                                               TextField(
@@ -422,7 +440,7 @@ class HomePage extends StatelessWidget {
                                                 decoration: InputDecoration(
                                                   border: OutlineInputBorder(),
                                                   labelText:
-                                                      'Quantity of Collectibles',
+                                                      'Spread love',
                                                 ),
                                               ),
                                               Container(
@@ -447,7 +465,7 @@ class HomePage extends StatelessWidget {
                                                   ),
                                                   onPressed: () {},
                                                   child: Text(
-                                                    "Subcribe",
+                                                    "Post",
                                                   ),
                                                 ),
                                               )
@@ -520,7 +538,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
     );
-    ;
+    
   }
 }
 

@@ -14,7 +14,9 @@ class OnboardingPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text( 
+
               "Stake the Stigma",
+              textAlign: TextAlign.center,
               style: TextStyle(
                   fontSize: 50,
                   fontWeight: FontWeight.w900,
